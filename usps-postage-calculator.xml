@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="postage-calculator-module" >
+    <test name="package-size-small">
+        <parameter name="packageLength" value="16"/>
+        <parameter name="packageHeight" value="12"/>
+        <parameter name="packageWidth" value="12"/>
+        <classes>
+            <class name="com.usps.tests.PostageCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="package-size-medium">
+        <parameter name="packageLength" value="22"/>
+        <parameter name="packageHeight" value="16"/>
+        <parameter name="packageWidth" value="15"/>
+        <classes>
+            <class name="com.usps.tests.PostageCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="package-size-large">
+        <parameter name="packageLength" value="28"/>
+        <parameter name="packageHeight" value="15"/>
+        <parameter name="packageWidth" value="16"/>
+        <classes>
+            <class name="com.usps.tests.PostageCalculatorTest"/>
+        </classes>
+    </test>
+
+</suite>
