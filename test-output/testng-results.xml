@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="24" passed="22" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-29T08:48:45Z" name="postage-calculator-module" finished-at="2021-03-29T08:49:41Z" duration-ms="56457">
+    <groups>
+    </groups>
+    <test started-at="2021-03-29T08:48:45Z" name="package-size-small-chrome" finished-at="2021-03-29T08:48:51Z" duration-ms="6489">
+      <class name="com.usps.tests.PostageCalculatorTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae]" started-at="2021-03-29T08:48:45Z" name="setup" finished-at="2021-03-29T08:48:46Z" duration-ms="1614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae]" started-at="2021-03-29T08:48:46Z" name="setupParameters" finished-at="2021-03-29T08:48:46Z" depends-on-methods="com.tests.BaseTest.setup" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupParameters -->
+        <test-method signature="destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae]" started-at="2021-03-29T08:48:46Z" name="destinationPackagePage" finished-at="2021-03-29T08:48:49Z" duration-ms="2492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destinationPackagePage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae]" started-at="2021-03-29T08:48:49Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:48:49Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=destinationPackagePage status=SUCCESS method=PostageCalculatorTest.destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae]" started-at="2021-03-29T08:48:49Z" name="packageWeightPage" finished-at="2021-03-29T08:48:50Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.destinationPackagePage" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packageWeightPage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae]" started-at="2021-03-29T08:48:50Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:48:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packageWeightPage status=SUCCESS method=PostageCalculatorTest.packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae]" started-at="2021-03-29T08:48:50Z" name="packagePropertiesPage" finished-at="2021-03-29T08:48:51Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packageWeightPage" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packagePropertiesPage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae]" started-at="2021-03-29T08:48:51Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:48:51Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packagePropertiesPage status=SUCCESS method=PostageCalculatorTest.packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae]" started-at="2021-03-29T08:48:51Z" name="mailServicesOptionsPrices" finished-at="2021-03-29T08:48:51Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packagePropertiesPage" duration-ms="606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mailServicesOptionsPrices -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae]" started-at="2021-03-29T08:48:51Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:48:51Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mailServicesOptionsPrices status=SUCCESS method=PostageCalculatorTest.mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.usps.tests.PostageCalculatorTest@df27fae]" started-at="2021-03-29T08:48:51Z" name="quitBrowser" finished-at="2021-03-29T08:48:51Z" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.usps.tests.PostageCalculatorTest -->
+    </test> <!-- package-size-small-chrome -->
+    <test started-at="2021-03-29T08:48:52Z" name="package-size-medium-chrome" finished-at="2021-03-29T08:48:58Z" duration-ms="6402">
+      <class name="com.usps.tests.PostageCalculatorTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a]" started-at="2021-03-29T08:48:52Z" name="setup" finished-at="2021-03-29T08:48:53Z" duration-ms="1269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a]" started-at="2021-03-29T08:48:53Z" name="setupParameters" finished-at="2021-03-29T08:48:53Z" depends-on-methods="com.tests.BaseTest.setup" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupParameters -->
+        <test-method signature="destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a]" started-at="2021-03-29T08:48:53Z" name="destinationPackagePage" finished-at="2021-03-29T08:48:55Z" duration-ms="2662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destinationPackagePage -->
+        <test-method signature="packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a]" started-at="2021-03-29T08:48:55Z" name="packageWeightPage" finished-at="2021-03-29T08:48:56Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.destinationPackagePage" duration-ms="855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packageWeightPage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a]" started-at="2021-03-29T08:48:55Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:48:55Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=destinationPackagePage status=SUCCESS method=PostageCalculatorTest.destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a]" started-at="2021-03-29T08:48:56Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:48:56Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packageWeightPage status=SUCCESS method=PostageCalculatorTest.packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a]" started-at="2021-03-29T08:48:56Z" name="packagePropertiesPage" finished-at="2021-03-29T08:48:57Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packageWeightPage" duration-ms="910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packagePropertiesPage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a]" started-at="2021-03-29T08:48:57Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:48:57Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packagePropertiesPage status=SUCCESS method=PostageCalculatorTest.packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a]" started-at="2021-03-29T08:48:57Z" name="mailServicesOptionsPrices" finished-at="2021-03-29T08:48:58Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packagePropertiesPage" duration-ms="598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mailServicesOptionsPrices -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a]" started-at="2021-03-29T08:48:58Z" name="quitBrowser" finished-at="2021-03-29T08:48:58Z" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a]" started-at="2021-03-29T08:48:58Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:48:58Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mailServicesOptionsPrices status=SUCCESS method=PostageCalculatorTest.mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4bb4de6a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+      </class> <!-- com.usps.tests.PostageCalculatorTest -->
+    </test> <!-- package-size-medium-chrome -->
+    <test started-at="2021-03-29T08:48:58Z" name="package-size-large-chrome" finished-at="2021-03-29T08:49:06Z" duration-ms="7850">
+      <class name="com.usps.tests.PostageCalculatorTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087]" started-at="2021-03-29T08:48:58Z" name="setup" finished-at="2021-03-29T08:48:59Z" duration-ms="1159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087]" started-at="2021-03-29T08:48:59Z" name="setupParameters" finished-at="2021-03-29T08:48:59Z" depends-on-methods="com.tests.BaseTest.setup" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[28]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupParameters -->
+        <test-method signature="destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087]" started-at="2021-03-29T08:48:59Z" name="destinationPackagePage" finished-at="2021-03-29T08:49:02Z" duration-ms="2929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destinationPackagePage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087]" started-at="2021-03-29T08:49:02Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:02Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=destinationPackagePage status=SUCCESS method=PostageCalculatorTest.destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087]" started-at="2021-03-29T08:49:02Z" name="packageWeightPage" finished-at="2021-03-29T08:49:04Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.destinationPackagePage" duration-ms="1570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packageWeightPage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087]" started-at="2021-03-29T08:49:04Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:04Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packageWeightPage status=SUCCESS method=PostageCalculatorTest.packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087]" started-at="2021-03-29T08:49:04Z" name="packagePropertiesPage" finished-at="2021-03-29T08:49:04Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packageWeightPage" duration-ms="870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packagePropertiesPage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087]" started-at="2021-03-29T08:49:04Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:04Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packagePropertiesPage status=SUCCESS method=PostageCalculatorTest.packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087]" started-at="2021-03-29T08:49:04Z" name="mailServicesOptionsPrices" finished-at="2021-03-29T08:49:05Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packagePropertiesPage" duration-ms="592" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.usps.tests.PostageCalculatorTest.mailServicesOptionsPrices(PostageCalculatorTest.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mailServicesOptionsPrices -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087]" started-at="2021-03-29T08:49:05Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:06Z" duration-ms="619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mailServicesOptionsPrices status=FAILURE method=PostageCalculatorTest.mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.usps.tests.PostageCalculatorTest@382db087]" started-at="2021-03-29T08:49:06Z" name="quitBrowser" finished-at="2021-03-29T08:49:06Z" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.usps.tests.PostageCalculatorTest -->
+    </test> <!-- package-size-large-chrome -->
+    <test started-at="2021-03-29T08:49:06Z" name="package-size-large-safari" finished-at="2021-03-29T08:49:14Z" duration-ms="8394">
+      <class name="com.usps.tests.PostageCalculatorTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7]" started-at="2021-03-29T08:49:06Z" name="setup" finished-at="2021-03-29T08:49:07Z" duration-ms="945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7]" started-at="2021-03-29T08:49:07Z" name="setupParameters" finished-at="2021-03-29T08:49:07Z" depends-on-methods="com.tests.BaseTest.setup" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[28]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupParameters -->
+        <test-method signature="destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7]" started-at="2021-03-29T08:49:07Z" name="destinationPackagePage" finished-at="2021-03-29T08:49:10Z" duration-ms="3349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destinationPackagePage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7]" started-at="2021-03-29T08:49:10Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:10Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=destinationPackagePage status=SUCCESS method=PostageCalculatorTest.destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7]" started-at="2021-03-29T08:49:10Z" name="packageWeightPage" finished-at="2021-03-29T08:49:11Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.destinationPackagePage" duration-ms="1296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packageWeightPage -->
+        <test-method signature="packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7]" started-at="2021-03-29T08:49:11Z" name="packagePropertiesPage" finished-at="2021-03-29T08:49:13Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packageWeightPage" duration-ms="1364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packagePropertiesPage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7]" started-at="2021-03-29T08:49:11Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:11Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packageWeightPage status=SUCCESS method=PostageCalculatorTest.packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7]" started-at="2021-03-29T08:49:13Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:13Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packagePropertiesPage status=SUCCESS method=PostageCalculatorTest.packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7]" started-at="2021-03-29T08:49:13Z" name="mailServicesOptionsPrices" finished-at="2021-03-29T08:49:14Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packagePropertiesPage" duration-ms="1145" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.usps.tests.PostageCalculatorTest.mailServicesOptionsPrices(PostageCalculatorTest.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mailServicesOptionsPrices -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7]" started-at="2021-03-29T08:49:14Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:14Z" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mailServicesOptionsPrices status=FAILURE method=PostageCalculatorTest.mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.usps.tests.PostageCalculatorTest@2698dc7]" started-at="2021-03-29T08:49:14Z" name="quitBrowser" finished-at="2021-03-29T08:49:14Z" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.usps.tests.PostageCalculatorTest -->
+    </test> <!-- package-size-large-safari -->
+    <test started-at="2021-03-29T08:49:14Z" name="package-size-small-safari" finished-at="2021-03-29T08:49:33Z" duration-ms="18310">
+      <class name="com.usps.tests.PostageCalculatorTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255]" started-at="2021-03-29T08:49:14Z" name="setup" finished-at="2021-03-29T08:49:15Z" duration-ms="710" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255]" started-at="2021-03-29T08:49:15Z" name="setupParameters" finished-at="2021-03-29T08:49:15Z" depends-on-methods="com.tests.BaseTest.setup" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupParameters -->
+        <test-method signature="destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255]" started-at="2021-03-29T08:49:15Z" name="destinationPackagePage" finished-at="2021-03-29T08:49:23Z" duration-ms="8498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destinationPackagePage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255]" started-at="2021-03-29T08:49:23Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:23Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=destinationPackagePage status=SUCCESS method=PostageCalculatorTest.destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255]" started-at="2021-03-29T08:49:23Z" name="packageWeightPage" finished-at="2021-03-29T08:49:30Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.destinationPackagePage" duration-ms="6189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packageWeightPage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255]" started-at="2021-03-29T08:49:30Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:30Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packageWeightPage status=SUCCESS method=PostageCalculatorTest.packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255]" started-at="2021-03-29T08:49:30Z" name="packagePropertiesPage" finished-at="2021-03-29T08:49:31Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packageWeightPage" duration-ms="1696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packagePropertiesPage -->
+        <test-method signature="mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255]" started-at="2021-03-29T08:49:31Z" name="mailServicesOptionsPrices" finished-at="2021-03-29T08:49:32Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packagePropertiesPage" duration-ms="1157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mailServicesOptionsPrices -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255]" started-at="2021-03-29T08:49:31Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:31Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packagePropertiesPage status=SUCCESS method=PostageCalculatorTest.packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255]" started-at="2021-03-29T08:49:32Z" name="quitBrowser" finished-at="2021-03-29T08:49:33Z" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255]" started-at="2021-03-29T08:49:32Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:32Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mailServicesOptionsPrices status=SUCCESS method=PostageCalculatorTest.mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@4b9e255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+      </class> <!-- com.usps.tests.PostageCalculatorTest -->
+    </test> <!-- package-size-small-safari -->
+    <test started-at="2021-03-29T08:49:33Z" name="package-size-medium-safari" finished-at="2021-03-29T08:49:41Z" duration-ms="8783">
+      <class name="com.usps.tests.PostageCalculatorTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68]" started-at="2021-03-29T08:49:33Z" name="setup" finished-at="2021-03-29T08:49:33Z" duration-ms="732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68]" started-at="2021-03-29T08:49:33Z" name="destinationPackagePage" finished-at="2021-03-29T08:49:38Z" duration-ms="4397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destinationPackagePage -->
+        <test-method is-config="true" signature="setupParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68]" started-at="2021-03-29T08:49:33Z" name="setupParameters" finished-at="2021-03-29T08:49:33Z" depends-on-methods="com.tests.BaseTest.setup" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupParameters -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68]" started-at="2021-03-29T08:49:38Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:38Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=destinationPackagePage status=SUCCESS method=PostageCalculatorTest.destinationPackagePage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68]" started-at="2021-03-29T08:49:38Z" name="packageWeightPage" finished-at="2021-03-29T08:49:39Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.destinationPackagePage" duration-ms="1050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packageWeightPage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68]" started-at="2021-03-29T08:49:39Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:39Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packageWeightPage status=SUCCESS method=PostageCalculatorTest.packageWeightPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68]" started-at="2021-03-29T08:49:39Z" name="packagePropertiesPage" finished-at="2021-03-29T08:49:40Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packageWeightPage" duration-ms="1350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packagePropertiesPage -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68]" started-at="2021-03-29T08:49:40Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:40Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=packagePropertiesPage status=SUCCESS method=PostageCalculatorTest.packagePropertiesPage()[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68]" started-at="2021-03-29T08:49:40Z" name="mailServicesOptionsPrices" finished-at="2021-03-29T08:49:41Z" depends-on-methods="com.usps.tests.PostageCalculatorTest.packagePropertiesPage" duration-ms="1162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mailServicesOptionsPrices -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68]" started-at="2021-03-29T08:49:41Z" name="quitBrowser" finished-at="2021-03-29T08:49:41Z" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68]" started-at="2021-03-29T08:49:41Z" name="takeScreenShotOnFailure" finished-at="2021-03-29T08:49:41Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mailServicesOptionsPrices status=SUCCESS method=PostageCalculatorTest.mailServicesOptionsPrices()[pri:0, instance:com.usps.tests.PostageCalculatorTest@60438a68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+      </class> <!-- com.usps.tests.PostageCalculatorTest -->
+    </test> <!-- package-size-medium-safari -->
+  </suite> <!-- postage-calculator-module -->
+</testng-results>

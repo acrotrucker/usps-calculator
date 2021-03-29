@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [postage-calculator-module]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="package-size-large-chrome(failed)">
+    <parameter name="packageHeight" value="15"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="packageLength" value="28"/>
+    <parameter name="packageWidth" value="16"/>
+    <classes>
+      <class name="com.usps.tests.PostageCalculatorTest">
+        <methods>
+          <include name="destinationPackagePage"/>
+          <include name="quitBrowser"/>
+          <include name="setup"/>
+          <include name="mailServicesOptionsPrices"/>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="setupParameters"/>
+          <include name="packageWeightPage"/>
+          <include name="packagePropertiesPage"/>
+        </methods>
+      </class> <!-- com.usps.tests.PostageCalculatorTest -->
+    </classes>
+  </test> <!-- package-size-large-chrome(failed) -->
+  <test thread-count="5" name="package-size-large-safari(failed)">
+    <parameter name="packageHeight" value="15"/>
+    <parameter name="browser" value="safari"/>
+    <parameter name="packageLength" value="28"/>
+    <parameter name="packageWidth" value="16"/>
+    <classes>
+      <class name="com.usps.tests.PostageCalculatorTest">
+        <methods>
+          <include name="destinationPackagePage"/>
+          <include name="quitBrowser"/>
+          <include name="setup"/>
+          <include name="mailServicesOptionsPrices"/>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="setupParameters"/>
+          <include name="packageWeightPage"/>
+          <include name="packagePropertiesPage"/>
+        </methods>
+      </class> <!-- com.usps.tests.PostageCalculatorTest -->
+    </classes>
+  </test> <!-- package-size-large-safari(failed) -->
+</suite> <!-- Failed suite [postage-calculator-module] -->
