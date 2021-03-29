@@ -1,24 +1,23 @@
 package com.usps.tests;
 
 
+
 import com.tests.BaseTest;
-import com.tests.BaseTestLastStage;
 import com.usps.pages.*;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class PostageCalculatorTest extends BaseTest {
 
 
-    private char packageLength;
-    private char packageHeight;
-    private char packageWidth;
+    public String packageLength;
+    public String  packageHeight;
+    public String packageWidth;
 
 
-
+    @BeforeTest
     @Parameters({"packageLength", "packageHeight", "packageWidth"})
-    public  void setupParameters(char packageLength, char packageHeight, char packageWidth){
+    public   void setupParameters(String  packageLength, String packageHeight, String packageWidth){
 
 
         this.packageLength = packageLength;
@@ -27,7 +26,7 @@ public class PostageCalculatorTest extends BaseTest {
     }
 
     @Test
-    public void destinationPackagePage(){
+    public void destinationPackagePage() {
         PostageCalculatorDestinationPage destinationPage = new PostageCalculatorDestinationPage(driver);
         destinationPage.goTo();
         destinationPage.enterDestinationDetails(78727, 94107);
@@ -35,33 +34,30 @@ public class PostageCalculatorTest extends BaseTest {
     }
 
     @Test(dependsOnMethods = "destinationPackagePage")
-    public void packageWeightPage(){
+    public void packageWeightPage() {
         PackageWeightPage packageWeightPage = new PackageWeightPage(driver);
-        packageWeightPage.enterPackageWeight(25,0);
+        packageWeightPage.enterPackageWeight(25, 0);
         packageWeightPage.submit();
 
 
     }
 
+
     @Test(dependsOnMethods = "packageWeightPage")
-    public void packagePropertiesPage(){
+    public void packagePropertiesPage() {
         LargePackagePropertiesPage packagePropertiesPage = new LargePackagePropertiesPage(driver);
-        packagePropertiesPage.enterPackageLenght(packageLength);
-        packagePropertiesPage.enterPackageLenght(packageHeight);
-        packagePropertiesPage.enterPackageLenght(packageWidth);
+        packagePropertiesPage.enterPackageProperties(packageLength,packageHeight,packageWidth);
         packagePropertiesPage.submit();
 
     }
 
     @Test(dependsOnMethods = "packagePropertiesPage")
-    public void mailServicesOptionsPrices(){
+    public void mailServicesOptionsPrices() {
         MailServicesOptionsPage mailServicesOptionsPrices = new MailServicesOptionsPage(driver);
         boolean actualPrice = mailServicesOptionsPrices.getPrice();
         Assert.assertTrue(actualPrice);
         boolean imagePresented = mailServicesOptionsPrices.isImagePresented();
         Assert.assertTrue(imagePresented);
     }
-
-
 
 }

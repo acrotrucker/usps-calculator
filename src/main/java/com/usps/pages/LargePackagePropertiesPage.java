@@ -12,16 +12,16 @@ public class LargePackagePropertiesPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @FindBy(xpath = "//*[@id=\"Length\"]")
+    @FindBy(xpath = "//input[@name='Length']")
     private  WebElement packageLengthTxt;
 
-    @FindBy(xpath = "//*[@id=\"Height\"]")
+    @FindBy(xpath = "//input[@name='Height']")
     private WebElement packageHeightTxt;
 
-    @FindBy(xpath = "//*[@id=\"Width\"]")
+    @FindBy(xpath = "//input[@name='Width']")
     private WebElement packageWidthTxt;
 
-    @FindBy(xpath = "//*[@id=\"maincontent\"]/form/div[11]/div[1]/div[5]/input")
+    @FindBy(xpath = "//input[@value='Continue']")
     private WebElement continueBtn;
 
 
@@ -34,24 +34,13 @@ public class LargePackagePropertiesPage {
     }
 
 
-    public void enterPackageLenght (char packageLength){
+    public void enterPackageProperties (String packageLength, String packageHeight, String packageWidth){
         this.wait.until(ExpectedConditions.elementToBeClickable(this.packageLengthTxt));
         this.packageLengthTxt.click();
-        this.packageLengthTxt.sendKeys(""+packageLength);
+        this.packageLengthTxt.sendKeys(packageLength);
+        this.packageHeightTxt.sendKeys(packageHeight);
+        this.packageWidthTxt.sendKeys(packageWidth);
     }
-
-    public void enterPackageHeight (char packageHeight){
-        this.wait.until(ExpectedConditions.elementToBeClickable(this.packageHeightTxt));
-        this.packageHeightTxt.click();
-        this.packageHeightTxt.sendKeys(""+packageHeight);
-    }
-
-    public void enterPackageWidth (char packageWidth){
-        this.wait.until(ExpectedConditions.elementToBeClickable(this.packageWidthTxt));
-        this.packageWidthTxt.click();
-        this.packageWidthTxt.sendKeys(""+packageWidth);
-    }
-    
 
     public void submit(){
         this.wait.until(ExpectedConditions.elementToBeClickable(this.continueBtn));

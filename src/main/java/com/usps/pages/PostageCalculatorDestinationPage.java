@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PostageCalculatorDestinationPage {
@@ -13,16 +12,16 @@ public class PostageCalculatorDestinationPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @FindBy(name = "Origin")
+    @FindBy(xpath = "//input[@name='Origin']")
     private WebElement fromZIPTxt;
 
-    @FindBy(name = "Destination")
+    @FindBy(xpath = "//input[@name='Destination']")
     private WebElement toZIPTxt;
 
-    @FindBy(xpath = "//*[@id=\"ShippingDate\"]")
+    @FindBy(xpath = "//input[@name='ShippingDate']")
     private WebElement dateTxt;
 
-    @FindBy(xpath = "//*[@id=\"option_4\"]")
+    @FindBy(xpath = "//input[@value='ShapeAndSize']")
     private WebElement shapeAndSizeBtn;
 
     @FindBy(xpath = "//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[5]/td[3]/a")

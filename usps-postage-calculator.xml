@@ -1,6 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
 <suite name="postage-calculator-module" >
-    <test name="package-size-small">
+    <listeners>
+        <listener class-name="listeners.Listeners"></listener>
+    </listeners>
+    <test name="package-size-small-chrome">
+        <parameter name="browser" value="chrome"/>
         <parameter name="packageLength" value="16"/>
         <parameter name="packageHeight" value="12"/>
         <parameter name="packageWidth" value="12"/>
@@ -8,7 +13,8 @@
             <class name="com.usps.tests.PostageCalculatorTest"/>
         </classes>
     </test>
-    <test name="package-size-medium">
+    <test name="package-size-medium-chrome">
+        <parameter name="browser" value="chrome"/>
         <parameter name="packageLength" value="22"/>
         <parameter name="packageHeight" value="16"/>
         <parameter name="packageWidth" value="15"/>
@@ -16,10 +22,38 @@
             <class name="com.usps.tests.PostageCalculatorTest"/>
         </classes>
     </test>
-    <test name="package-size-large">
+    <test name="package-size-large-chrome">
+        <parameter name="browser" value="chrome"/>
         <parameter name="packageLength" value="28"/>
         <parameter name="packageHeight" value="15"/>
         <parameter name="packageWidth" value="16"/>
+        <classes>
+            <class name="com.usps.tests.PostageCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="package-size-large-safari">
+        <parameter name="browser" value="safari"/>
+        <parameter name="packageLength" value="28"/>
+        <parameter name="packageHeight" value="15"/>
+        <parameter name="packageWidth" value="16"/>
+        <classes>
+            <class name="com.usps.tests.PostageCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="package-size-small-safari">
+        <parameter name="browser" value="safari"/>
+        <parameter name="packageLength" value="16"/>
+        <parameter name="packageHeight" value="12"/>
+        <parameter name="packageWidth" value="12"/>
+        <classes>
+            <class name="com.usps.tests.PostageCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="package-size-medium-safari">
+        <parameter name="browser" value="safari"/>
+        <parameter name="packageLength" value="22"/>
+        <parameter name="packageHeight" value="16"/>
+        <parameter name="packageWidth" value="15"/>
         <classes>
             <class name="com.usps.tests.PostageCalculatorTest"/>
         </classes>

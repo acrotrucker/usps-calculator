@@ -12,13 +12,13 @@ public class PackageWeightPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @FindBy(xpath = "//*[@id=\"Pounds\"]")
+    @FindBy(xpath = "//input[@name='Pounds']")
     private WebElement poundsTxt;
 
-    @FindBy(xpath = "//*[@id=\"Ounces\"]")
+    @FindBy(xpath = "//input[@name='Ounces']")
     private WebElement ouncesTxt;
 
-    @FindBy(xpath = "//*[@id=\"option_4\"]")
+    @FindBy(xpath = "//input[@value='LargePackage']")
     private WebElement largePackageBtn;
 
 

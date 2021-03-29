@@ -12,14 +12,11 @@ public class MailServicesOptionsPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @FindBy(xpath = "//*[@id=\"mail-services-sm-lg\"]/div[4]/div[1]/img")
+    @FindBy(xpath = "//img[@alt='USPS Retail Ground®']")
     private WebElement retailGroundImage;
 
     @FindBy(xpath = "//*[@id=\"mail-services-sm-lg\"]/div[3]/div[2]/table/tbody/tr/td[3]")
     private WebElement retailGroundPrice;
-
-    @FindBy(xpath = "//*[@id=\"mail-services-sm-lg\"]/div[3]/div[1]/img")
-    private WebElement RetailGroundImage;
 
 
     public MailServicesOptionsPage(WebDriver driver) {
@@ -35,7 +32,7 @@ public class MailServicesOptionsPage {
         String price = this.retailGroundPrice.getText();
         double limit = 80.00;
         price = price.replace("$", "");
-        double priceValue = Integer.parseInt(price.substring(0, price.indexOf(".")));
+        double priceValue = Float.parseFloat(price.substring(0,price.indexOf(".")));
         System.out.println("PriceValue : " + priceValue);
 
         if (priceValue < limit) {
@@ -51,7 +48,7 @@ public class MailServicesOptionsPage {
 
     public boolean isImagePresented() {
 
-        boolean imagePresent = RetailGroundImage.isDisplayed();
+        boolean imagePresent = retailGroundImage.isDisplayed();
 
         System.out.println("Image presented");
 
