@@ -29,16 +29,8 @@ public abstract class BaseTest  {
              System.setProperty("webdriver.safari.driver", "/usr/bin/safaridriver");
              this.driver = new SafariDriver();
         }
-        //
+
     }
-
-
-    /*@BeforeTest
-    public void setupDriver() {
-
-
-
-    }*/
 
     @AfterTest
     public void quitBrowser() {

@@ -42,11 +42,10 @@ public class LargePackagePropertiesPage {
         this.packageWidthTxt.sendKeys(packageWidth);
     }
 
+
     public void submit(){
         this.wait.until(ExpectedConditions.elementToBeClickable(this.continueBtn));
         this.continueBtn.click();
     }
-
-
 
 }
