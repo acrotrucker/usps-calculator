@@ -32,7 +32,7 @@ public class MailServicesOptionsPage {
         String price = this.retailGroundPrice.getText();
         double limit = 80.00;
         price = price.replace("$", "");
-        double priceValue = Float.parseFloat(price.substring(0,price.indexOf(".")));
+        double priceValue = Double.parseDouble(price.substring(0,price.indexOf(".")));
         System.out.println("PriceValue : " + priceValue);
 
         if (priceValue < limit) {

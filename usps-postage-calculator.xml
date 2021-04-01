@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="postage-calculator-module" >
+<suite name="postage-calculator-module"  >
     <listeners>
         <listener class-name="listeners.Listeners"></listener>
     </listeners>

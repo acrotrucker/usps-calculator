@@ -37,8 +37,11 @@ public class LargePackagePropertiesPage {
     public void enterPackageProperties (String packageLength, String packageHeight, String packageWidth){
         this.wait.until(ExpectedConditions.elementToBeClickable(this.packageLengthTxt));
         this.packageLengthTxt.click();
+        this.packageLengthTxt.clear();
         this.packageLengthTxt.sendKeys(packageLength);
+        this.packageHeightTxt.clear();
         this.packageHeightTxt.sendKeys(packageHeight);
+        this.packageWidthTxt.clear();
         this.packageWidthTxt.sendKeys(packageWidth);
     }
 
